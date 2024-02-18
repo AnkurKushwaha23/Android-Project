@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">RandomImage</string>
+    <string name="load">Load Random Image</string>
+    <string name="link">Get Link</string>
+    <string name="guide">Quick Guide</string>
+    <string name="follow">Follow Us On</string>
+    <string name="contact">Contact Us</string>
+    <string name="Mail">Mail Us</string>
+    <string name="ver">VERSION </string>
+    <string name="creater">Created by <b>ANKUR KUSHWAHA</b>😎</string>
+    <string name="step1"><b>Step1:</b> Click Load Random Image Button.</string>
+    <string name="step2"><b>Step2:</b> If you like the Wallpaper, click Get Link Button. The Wallpaper Link got copied to your ClipBoard.</string>
+    <string name="step3"><b>Step3:</b> Go to your Default Browser and Paste the link in AddressBar, Download it👍</string>
+    <string name="no_internet_connection_available">No internet connection available!</string>
+    <string name="on_the_internet_connection">On The Internet Connection Or Restart the App</string>
+</resources>
