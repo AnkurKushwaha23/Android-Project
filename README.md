@@ -1,5 +1,84 @@
 #Random Image Loader App
 
+
+
+import java.util.Scanner;
+
+class Node {
+    int data;
+    Node next;
+
+    Node(int data) {
+        this.data = data;
+        this.next = null;
+    }
+}
+
+class LinkedList {
+    Node head;
+
+    void insert(int data) {
+        Node newNode = new Node(data);
+        if (head == null) {
+            head = newNode;
+        } else {
+            Node temp = head;
+            while (temp.next != null) {
+                temp = temp.next;
+            }
+            temp.next = newNode;
+        }
+        System.out.println("Inserted: " + data);
+    }
+
+    void display() {
+        Node temp = head;
+        System.out.print("Linked List: ");
+        while (temp != null) {
+            System.out.print(temp.data + " ");
+            temp = temp.next;
+        }
+        System.out.println();
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        LinkedList linkedList = new LinkedList();
+
+        int choice;
+        do {
+            System.out.println("\nMenu:");
+            System.out.println("1. Insert");
+            System.out.println("2. Display");
+            System.out.println("3. Exit");
+            System.out.print("Enter your choice: ");
+            choice = scanner.nextInt();
+
+            switch (choice) {
+                case 1:
+                    System.out.print("Enter data to insert: ");
+                    int data = scanner.nextInt();
+                    linkedList.insert(data);
+                    break;
+                case 2:
+                    linkedList.display();
+                    break;
+                case 3:
+                    System.out.println("Exiting program. Goodbye!");
+                    break;
+                default:
+                    System.out.println("Invalid choice. Please try again.");
+            }
+        } while (choice != 3);
+
+        scanner.close();
+    }
+}
+
+
+
 #Overview
 
 The Random Image Loader App is a simple mobile application that allows users to load random images using the Unsplash API. The app is built using the OKHTTP library for making API requests and provides a clean and intuitive user interface for users to interact with.
